@@ -1,0 +1,2 @@
+(()=>{var e={643:e=>{"use strict";e.exports=window}},o={};function r(s){var t=o[s];if(void 0!==t)return t.exports;var a=o[s]={exports:{}};return e[s](a,a.exports,r),a.exports}(()=>{var e=r(643);class o extends Shadow{connectedCallback(){console.log("home")}}e.register(o,"home-")})(),(()=>{var e=r(643);class o extends Shadow{connectedCallback(){console.log("it is what it is")}}e.register(o,"con-")})()})();
+//# sourceMappingURL=bundle.js.map

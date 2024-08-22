@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "glob": "^11.0.0",
+    "webpack": "^5.93.0",
+    "webpack-cli": "^5.1.4"
+  },
+  "scripts": {
+    "compile": "node _/compile.js && npx webpack --config ./_/webpack.config.js"
+  }
+}
