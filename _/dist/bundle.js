@@ -1,2 +1,63 @@
-(()=>{var e={643:e=>{"use strict";e.exports=window}},o={};function r(s){var t=o[s];if(void 0!==t)return t.exports;var a=o[s]={exports:{}};return e[s](a,a.exports,r),a.exports}(()=>{var e=r(643);class o extends Shadow{connectedCallback(){console.log("home")}}e.register(o,"home-")})(),(()=>{var e=r(643);class o extends Shadow{connectedCallback(){console.log("it is what it is")}}e.register(o,"con-")})()})();
+/******/ (() => { // webpackBootstrap
+/******/ 	var __webpack_modules__ = ({
+
+/***/ 643:
+/***/ ((module) => {
+
+"use strict";
+module.exports = window;
+
+/***/ })
+
+/******/ 	});
+/************************************************************************/
+/******/ 	// The module cache
+/******/ 	var __webpack_module_cache__ = {};
+/******/ 	
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/ 		// Check if module is in cache
+/******/ 		var cachedModule = __webpack_module_cache__[moduleId];
+/******/ 		if (cachedModule !== undefined) {
+/******/ 			return cachedModule.exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = __webpack_module_cache__[moduleId] = {
+/******/ 			// no module.id needed
+/******/ 			// no module.loaded needed
+/******/ 			exports: {}
+/******/ 		};
+/******/ 	
+/******/ 		// Execute the module function
+/******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
+/******/ 	
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/ 	
+/************************************************************************/
+// This entry need to be wrapped in an IIFE because it need to be isolated against other entry modules.
+(() => {
+/* provided dependency */ var home_window = __webpack_require__(643);
+class Home extends Shadow {
+    connectedCallback() {
+        console.log("home")
+    }
+}
+home_window.register(Home, 'home-');
+})();
+
+// This entry need to be wrapped in an IIFE because it need to be isolated against other entry modules.
+(() => {
+/* provided dependency */ var con_window = __webpack_require__(643);
+class Con extends Shadow {
+    connectedCallback() {
+        console.log("it is what it is")
+    }
+}
+con_window.register(Con, 'con-');
+})();
+
+/******/ })()
+;
 //# sourceMappingURL=bundle.js.map

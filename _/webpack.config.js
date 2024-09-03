@@ -13,6 +13,9 @@ module.exports = {
   externals: {
     window: 'window', // Tell Webpack to treat window as a global variable
   },
+  optimization: {
+    minimize: false,  // Disable minimization to preserve class names
+  },
   plugins: [
     new webpack.ProvidePlugin({
       window: 'window',
